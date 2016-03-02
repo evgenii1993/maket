@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>Макет</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+	<div id='g-fon'></div>
+		<div class="g-page">
+			<div class="b-header-menu" >
+				<div class = "b-header-menu__logo">
+					<div class = "b-logo">
+						<img src="face-menu-top-left.png" class = "b-logo__img"/>
+					</div>
+				</div>
+				<div class = "b-header-menu__menu-top">
+					<div class = "b-menu-top">
+						<ul class = "b-menu-top__ul">
+							<div class = "b-menu-top__li">
+								<li class = "b-li-menu-top">
+										<a href="#" class ="b-menu-top__a">1</a>
+								</li>
+								<li class = "b-li-menu-top">
+										<a href="#" class="b-menu-top__a">2</a>
+								</li>
+								<li class = "b-li-menu-top">
+										<a href="#" class="b-menu-top__a">3</a>
+								</li> 	
+								<li class = "b-li-menu-top">
+										<a href="#" class="b-menu-top__a">4</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+  		<div class="b-contents">
+			<div class="b-content__text--">
+		  		<h1 class="">Hello,world!</h1>
+		  		<p>Меня зовут:<strong>Евгений</strong></p>
+		    </div>
+		</div>
+  	
+</div>
+	
+
+
+
+<script>
+var arrFon = new Array();
+var time;
+var number = 0;
+//------------------------ С обоими сайта-----------------------------
+function timeBreak(){ //Запуск каждые 10 секунд, функции
+	time = window.setInterval(editFon,10000);
+	console.log("Было");
+}
+timeBreak();
+
+function editFon(){ //Изменение фота сайта
+	number++;
+	arrFon = ['fon','2'];
+	if(number >= arrFon.length)
+		{
+			number = 0;
+		}
+		console.log(number);
+		document.getElementById("g-fon").classList.add("fonClear");
+		document.getElementById("g-fon").style.backgroundImage='url(' + arrFon[number] + '.jpg;
+}
+//************************************************************************
+
+
+</script>
+</body>
+</html>
