@@ -1,0 +1,28 @@
+.menu-top{
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    border-left: 2px solid rgb(160, 167, 250);
+}
+.menu-top__ul{
+    padding: 0px;
+    margin: 0px;
+}
+.menu-top__li{
+    float: left;
+    display: block;
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    border-right: 2px solid rgb(160, 167, 250);
+}
+.menu-top__li:hover{
+    background:rgb(160, 167, 250);
+}
+.menu-top__a{
+    text-decoration: none;
+    position: absolute;
+    top: 45%;
+}
+

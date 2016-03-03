@@ -1,0 +1,14 @@
+
+
+
+/*общие стили страницы*/
+@import url("default/default.css");
+
+/*стили для блоков по БЭМу*/
+@import url("header-menu/header-menu.css");
+@import url("logo/logo.css");
+@import url("menu-top/menu-top.css");
+
+
+
+
