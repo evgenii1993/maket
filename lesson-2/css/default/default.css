@@ -2,7 +2,7 @@
     position: relative;
     background: white;
     width: 94%;
-    height: 76%;
+    min-height: 76%;
     top: 4%;
     left: 3%;
     right: 3%;
@@ -12,6 +12,7 @@
 }
 body{
     margin:0px;
+    min-width: 1300px;
 }
 #fons {
     background-image: url("fon.jpg");
@@ -37,6 +38,3 @@ body{
     border-top-left-radius: 70px 90px;
     border-top-right-radius: 70px 90px;
 }
-
-
-
