@@ -1,0 +1,94 @@
+.contant {
+    position: relative;
+    width: 600px;
+    height: 290px;
+    margin: 0 auto;
+}
+.coob{
+	position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    animation: anim 50s linear infinite;
+}
+.side {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    transform-origin: 0 0;
+    transform: translate3d(0,0,90px) rotate3d(1,0,0,-90deg);
+	background: rgba(202, 205, 217, 0.6);
+}
+
+
+
+.side{
+    &.one{
+    transform: translate3d(0,0,90px);
+    }
+}
+
+.side {
+    &.two{
+    left: 100%;
+    transform-origin: 0 0;
+    transform: translate3d(0,0,90px) rotate3d(0,-1,0,-90deg);
+    }
+}
+
+.side {
+    &.three{
+    transform-origin: 0 100%;
+    transform: translate3d(0,0,90px) rotate3d(0,1,0,-270deg);
+    }
+}
+
+.side {
+    &.four{
+    bottom: 200px;
+    transform-origin: right bottom;
+    transform: translate3d(0px,0px,90px) rotate3d(1,1,1,240deg);
+    }
+}
+
+.side {
+    &.five{
+    top: 200px;
+    }
+}
+
+.side{
+    &.six{
+    transform-origin: 0 0;
+    transform: translate3d(0px,0px,-110px) rotate3d(-1,0,0,-0deg);
+    }
+}
+img {
+    height: 50%;
+    width: 50%;
+    margin-top: 25%;
+}
+
+@keyframes anim{
+	0%{
+		transform: rotate3d(0,0,0,0deg);
+	}
+	20%{
+		transform: rotate3d(-1,-1,-1,60deg);
+	}
+	40%{
+		transform: rotate3d(1,1,1,120deg);
+	}
+	60%{
+		transform: rotate3d(-4,-2,-4,180deg);
+	}
+	80%{
+		transform: rotate3d(4,2,1,240deg);
+	}
+	100%{
+		transform: rotate3d(0,0,0,0deg);
+	}
+}

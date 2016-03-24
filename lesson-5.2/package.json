@@ -1,0 +1,22 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "description": "sass-project",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "sass-compiler"
+  ],
+  "author": "Evgenii",
+  "license": "mit",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "2.2.0",
+    "gulp-watch": "^4.2.4",
+    "gulp-less":"^1",
+    "gulp-concat":"^"
+  }
+}

@@ -1,0 +1,11 @@
+.header-menu {
+  position: relative;
+  width: 100%;
+  height: 23%;
+}
+.header-menu__menu-top {
+  float: left;
+  height: 50px;
+  width: 65%;
+  padding-left: 20%;
+}
