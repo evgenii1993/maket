@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "Uni Sans Thin CAPS";
+	src: url("../fonts/Uni Sans Thin.otf");
+}
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PT_Sans.ttf");
+}
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("../fonts/PT_Sans_Bold.ttf");
+}
+@font-face {
+    font-family: "PT Sans Bold Italic";
+    src: url("../fonts/PT_Sans_Bold_Italic.ttf");
+}
