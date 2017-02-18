@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233972e9-6a0a-470c-8bab-84e844ad25b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.php" afterPath="$PROJECT_DIR$/API.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generally.js" afterPath="$PROJECT_DIR$/generally.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/Authors/Authors.less" afterPath="$PROJECT_DIR$/less/Authors/Authors.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/Author/Authors.jsx" afterPath="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx" afterPath="$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/book/Book.jsx" afterPath="$PROJECT_DIR$/react/components/book/Book.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/list/List.jsx" afterPath="$PROJECT_DIR$/react/components/list/List.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewAuthor.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewAuthor.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -59,8 +54,24 @@
         <entry file="file://$PROJECT_DIR$/generally.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <marker date="1487460754397" expanded="true" signature="3245:3500" ph="SELECT `repo... book" />
+                <marker date="1487460754397" expanded="true" signature="4045:4068" ph="SELECT * FRO... authors" />
+                <marker date="1487460754397" expanded="true" signature="4471:4536" ph="SELECT * FRO... authors" />
+                <marker date="1487460754397" expanded="true" signature="4606:4671" ph="INSERT INTO `authors`... " />
+                <marker date="1487460754397" expanded="true" signature="4762:4875" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="List.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -114,13 +125,13 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/less/styles.less" />
         <option value="$PROJECT_DIR$/dist/style.css" />
-        <option value="$PROJECT_DIR$/API.php" />
         <option value="$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx" />
         <option value="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
         <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
         <option value="$PROJECT_DIR$/less/Authors/Authors.less" />
-        <option value="$PROJECT_DIR$/generally.js" />
+        <option value="$PROJECT_DIR$/API.php" />
         <option value="$PROJECT_DIR$/react/components/list/List.jsx" />
+        <option value="$PROJECT_DIR$/generally.js" />
       </list>
     </option>
   </component>
@@ -883,12 +894,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487443556408</updated>
       <workItem from="1487443558067" duration="8771000" />
-      <workItem from="1487452743318" duration="7900000" />
+      <workItem from="1487452743318" duration="8267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16671000" />
+    <option name="totallyTimeSpent" value="17038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1029,20 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <marker date="1487458114572" expanded="true" signature="3245:3500" ph="SELECT `repo... book" />
-            <marker date="1487458114572" expanded="true" signature="4045:4052" ph="SELECT `repo... book" />
-            <marker date="1487458114572" expanded="true" signature="4045:4068" ph="SELECT * FRO... authors" />
-            <marker date="1487458114572" expanded="true" signature="4471:4536" ph="SELECT * FRO... authors" />
-            <marker date="1487458114572" expanded="true" signature="4606:4671" ph="INSERT INTO `authors`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/Authors/Authors.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1059,26 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generally.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/components/Library.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1095,6 +1076,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generally.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <marker date="1487460754397" expanded="true" signature="3245:3500" ph="SELECT `repo... book" />
+            <marker date="1487460754397" expanded="true" signature="4045:4068" ph="SELECT * FRO... authors" />
+            <marker date="1487460754397" expanded="true" signature="4471:4536" ph="SELECT * FRO... authors" />
+            <marker date="1487460754397" expanded="true" signature="4606:4671" ph="INSERT INTO `authors`... " />
+            <marker date="1487460754397" expanded="true" signature="4762:4875" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -14,8 +14,9 @@ window.gl = {
 				}
 			},
 			error:function(error){
-				alert("ERROR");
-				console.log(error);
+				if(error.statusText == "OK"){
+					//ok
+				}
 			}
 		});
 	},
