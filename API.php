@@ -4,7 +4,7 @@
 			$dbUrl = "localhost";
 		    $dbName = "library";
 		    $dbLogin = "root";
-		    $dbPassword = "root";
+		    $dbPassword = "123456";
             $link = new mysqli(
                 $dbUrl.':3306/'.$dbName,
                 $dbLogin, $dbPassword,
@@ -189,8 +189,11 @@
                 DB::connect("INSERT INTO `authors`(`name_a`) VALUES ('".$_POST['sendData']."')");
             }
         break;
+        case 'removeLib':
+            $res = DB::connect("DELETE FROM `repositoryLib` WHERE `id_author` = '".$_POST['id_author']."' AND `id_book` = '".$_POST['id_book']."'");
+        break;
         default:
-            # code...
+
             break;
     }
 
