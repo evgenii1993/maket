@@ -10,13 +10,14 @@ export default class NewAuthor  extends Component<{}, Props, State>{
 		this.setState({
 			nameAuthor: this.refs.author.value
 		});	
-		this.props.refrash();
+
 	}
 	createAuthor = () =>{
 			window.gl.ajax({
 				option: "createAuthor",
 				sendData: this.state.nameAuthor
 			});
+			this.props.refrash();
 		}
 	render(){
 		return(
