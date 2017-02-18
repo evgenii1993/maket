@@ -15,8 +15,8 @@ export default class NewAuthor  extends Component<{}, Props, State>{
 		window.gl.ajax({
 			option: "createAuthor",
 			sendData: this.state.nameAuthor
-		});
-		this.props.refrash();
+		}, this.props.refrash);
+		//this.props.refrash();
 	};
 	render(){
 		return(

@@ -1,5 +1,5 @@
 window.gl = {
-	ajax: function(query, view){
+	ajax: function(query, view, callBack){
 		$.ajax({
 			type: 'POST',
 			dataType: 'json',
@@ -12,11 +12,10 @@ window.gl = {
 						data: data
 					});
 				}
+                if(callBack != undefined)callBack();
 			},
 			error:function(error){
-				if(error.statusText == "OK"){
-					//ok
-				}
+                if(callBack != undefined)callBack();
 			}
 		});
 	},

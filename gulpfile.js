@@ -39,7 +39,8 @@ gulp.task('less', function () {
 gulp.task('watch', ['build'], function () {
     gulp.watch([
         'react/*/*.jsx',
-        'react/*/*/*.jsx'
+        'react/*/*/*.jsx',
+        'react/*/*/*/*.jsx'
     ], ['build']);
 
     gulp.watch([
