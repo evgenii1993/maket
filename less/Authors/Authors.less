@@ -1,5 +1,7 @@
 .authors__select {
   position: relative;
+  display: inline-block;
+  border: 1px solid;
 
   &__items {
     position: absolute;
@@ -8,9 +10,10 @@
     top: 100%;
     left: 0;
     display: none;
+    width: 100%;
 
     .author{
-      padding: 5px 15px;
+      text-align: center;
 
       &:hover{
         background-color: #ccc;

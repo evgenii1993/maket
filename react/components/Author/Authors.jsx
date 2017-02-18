@@ -13,21 +13,38 @@ export default class Authors extends Component<{}, Props, State>{
 			open: !this.state.open
 		});
 	};
+	deleteAuthor = (id) => {
+		let newData = this.props.data.map((item)=>{
+			if(id != item.id){
+				return item;
+			}
+		});
+		this.setState({
+			data: newData
+		});
+	};
 
 	render(){
 		let authorList = [],
+            idAuthor = [],
 			all = [];
 
         this.props.data.forEach((item, index)=>{
+            idAuthor.push(item.id);
             authorList.push(
-            	<Author name={item.name} id={item.id} key={index} />
+            	<Author name={item.name} id={item.id} key={index} remove={()=>{this.deleteAuthor(item.id)}}/>
 			);
 		});
         this.props.all.forEach((item, index)=>{
-            all.push(
-				<Author name={item.name} id={item.id} key={index} />
-            );
+            if(idAuthor.find((it)=>{return it == item.id}) == false){
+                all.push(
+                    <Author name={item.name} id={item.id} key={index} />
+                );
+            }
         });
+        if(all.length === 0){
+            all.push(<div key={all.length+1} className="authors">Нет невписаных авторов</div>);
+        }
         return(
 			<div className="authors">
 				<div className="authors__list">
@@ -45,9 +62,15 @@ export default class Authors extends Component<{}, Props, State>{
 }
 class Author extends Component<{}, Props, State>{
     render(){
+    	let removeBtn = undefined;
+    	if(this.props.remove != undefined){
+            removeBtn = <button onClick={this.props.remove}>Удалить автора</button>
+		}
+
         return(
 			<div className="author">
 				{this.props.name}
+				{removeBtn}
 			</div>
         );
     }

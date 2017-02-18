@@ -4,7 +4,7 @@
 			$dbUrl = "localhost";
 		    $dbName = "library";
 		    $dbLogin = "root";
-		    $dbPassword = "123456";
+		    $dbPassword = "root";
         $link = new mysqli(
             $dbUrl.':3306/'.$dbName,
             $dbLogin, $dbPassword,
@@ -142,7 +142,7 @@
 	    public static function search($arr, $nameField, $getValue){
             for($i = 0; $i < count($arr); $i++){
                 if(get_object_vars($arr[$i])[$nameField] == $getValue){
-                    return $i;
+                    return $arr[$i];
                 }else{
                     continue;
                 }
@@ -159,10 +159,10 @@
             $books = [];
 
             while ($row = mysqli_fetch_array($result)) {
-                $index = Instrument::search($books, "id", $row["id_book"]);
+                $fount = Instrument::search($books, "id", $row["id_book"]);
 
-                if($index !== false){
-                    $books[$index]->addAuthors(new Author($row["id_author"],$row["name_a"]));
+                if($fount !== false){
+                    $fount -> authors[] = (new Author($row["id_author"],$row["name_a"]));
                 }else{
                     $books[] = new Book($row["name_b"],$row["id_book"], [new Author($row["id_author"],$row["name_a"])]);
                 }
