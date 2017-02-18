@@ -39,7 +39,7 @@ export default class List  extends Component<{}, Props, State>{
 			<div className="list">
 				{loading}
 				{books}
-				<NewAuthor />
+				<NewAuthor refrash={this.refrash}/>
 			</div>
 		);
 	}
