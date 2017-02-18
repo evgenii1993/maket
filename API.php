@@ -173,6 +173,12 @@
         case 'update':
 
         break;
+        case 'createAuthor':
+            $res = DB::connect("SELECT * FROM `authors` WHERE `name_a` = '".$_POST['sendData']."'");
+            if($res->num_rows == 0){
+                DB::connect("INSERT INTO `authors`(`name_a`) VALUES ('".$_POST['sendData']."')");
+            }
+        break;
         default:
             # code...
             break;
