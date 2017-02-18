@@ -3,6 +3,7 @@
 import React, {Component} from 'react';
 import Loading from "../loading/Loading";
 import Book from "../book/Book";
+import NewAuthor from "../Author/newAuthor/NewAuthor";
 
 export default class List  extends Component<{}, Props, State>{
 	state = {
@@ -38,6 +39,7 @@ export default class List  extends Component<{}, Props, State>{
 			<div className="list">
 				{loading}
 				{books}
+				<NewAuthor />
 			</div>
 		);
 	}
