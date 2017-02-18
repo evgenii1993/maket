@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233972e9-6a0a-470c-8bab-84e844ad25b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.php" afterPath="$PROJECT_DIR$/API.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generally.js" afterPath="$PROJECT_DIR$/generally.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/Author/Authors.jsx" afterPath="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Authors.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Authors.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react/components/Author/Authors.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="308">
+              <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -83,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generally.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generally.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generally.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -96,12 +93,9 @@
       <file leaf-file-name="List.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="292">
               <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-              <folding>
-                <element signature="e#15#54#0" expanded="true" />
-                <marker date="1487457695374" expanded="true" signature="901:911" ph="&lt;div/&gt;" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,8 +139,8 @@
         <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
         <option value="$PROJECT_DIR$/less/Authors/Authors.less" />
         <option value="$PROJECT_DIR$/API.php" />
-        <option value="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
         <option value="$PROJECT_DIR$/generally.js" />
+        <option value="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
       </list>
     </option>
   </component>
@@ -799,12 +793,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487443556408</updated>
       <workItem from="1487443558067" duration="8771000" />
-      <workItem from="1487452743318" duration="5942000" />
+      <workItem from="1487452743318" duration="6082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14713000" />
+    <option name="totallyTimeSpent" value="14853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -957,17 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-          <folding>
-            <element signature="e#15#54#0" expanded="true" />
-            <marker date="1487457695374" expanded="true" signature="901:911" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -990,10 +973,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/Author/Authors.jsx">
+    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="292">
+          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1002,6 +985,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/Author/Authors.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
           <folding />
         </state>
       </provider>

@@ -36,7 +36,7 @@ export default class Authors extends Component<{}, Props, State>{
 			);
 		});
         this.props.all.forEach((item, index)=>{
-            if(window.gl.foundInArr(idAuthor, item.id)){
+            if(!window.gl.foundInArr(idAuthor, item.id)){
                 all.push(
                     <Author name={item.name} id={item.id} key={index} />
                 );
