@@ -25,7 +25,7 @@
          * @param $name
          * @param $id
          */
-        public function __construct($name, $id)
+        public function __construct($id, $name)
         {
             $this->name = $name;
             $this->id = $id;
@@ -168,7 +168,17 @@
                 }
             }
 
-            echo json_encode(["result" => $books]);
+            $authors = [];
+
+            $result_onlyAuthors = DB::connect("SELECT * FROM `authors`");
+            while ($row = mysqli_fetch_array($result_onlyAuthors)) {
+                $authors[] = new Author($row["id_author"],$row["name_a"]);
+            }
+
+            echo json_encode([
+                "result" => $books,
+                "authors" => $authors
+            ]);
             break;
         case 'update':
 

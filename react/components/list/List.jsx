@@ -8,12 +8,12 @@ export default class List  extends Component<{}, Props, State>{
 	state = {
 		data: [],
 		loading: true
-	}
+	};
 	refrash = () =>{
 		this.setState({
 			loading: true
 		});		
-	}
+	};
 	render(){
 
 		let loading = undefined,
@@ -29,7 +29,7 @@ export default class List  extends Component<{}, Props, State>{
 		}
 		if(this.state.data.result != undefined){
             this.state.data.result.forEach((item, index)=>{
-                books.push(<Book key={index} data={item} refrash={this.refrash}/> );
+                books.push(<Book key={index} allAuthors={ this.state.data.authors} data={item} refrash={this.refrash}/> );
             });
 		}
 

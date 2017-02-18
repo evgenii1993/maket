@@ -1,0 +1,26 @@
+.authors__select {
+  position: relative;
+
+  &__items {
+    position: absolute;
+    background: #FFF;
+    cursor: pointer;
+    top: 100%;
+    left: 0;
+    display: none;
+
+    .author{
+      padding: 5px 15px;
+
+      &:hover{
+        background-color: #ccc;
+      }
+    }
+  }
+
+  &.open {
+    .authors__select__items{
+      display: block;
+    }
+  }
+}

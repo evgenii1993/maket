@@ -4,27 +4,51 @@ import React, {Component} from 'react';
 
 export default class Authors extends Component<{}, Props, State>{
 	state = {
-		nameAuthor: '',
-		data: []
-	}
-	editValue = () =>{
+		data: this.props.data,
+		open: false
+	};
+
+	toggleOpen = () => {
 		this.setState({
-			nameAuthor: this.refs.author.value
-		});	
-	}
-	createAuthor = () =>{
-		window.gl.ajax({
-			option: "createAuthor",
-			sendData: this.state.nameAuthor
-		}, this);
-		console.log(this.state.data);
-	}
+			open: !this.state.open
+		});
+	};
+
 	render(){
-		return(
-			<div className="author">
-				<input ref="author" value={this.state.nameAuthor} placeholder="Напиши автора" onChange={this.editValue}  /> 
-				<button onClick={this.createAuthor} >  Запись </button>
+		let authorList = [],
+			all = [];
+
+        this.props.data.forEach((item, index)=>{
+            authorList.push(
+            	<Author name={item.name} id={item.id} key={index} />
+			);
+		});
+        this.props.all.forEach((item, index)=>{
+            all.push(
+				<Author name={item.name} id={item.id} key={index} />
+            );
+        });
+        return(
+			<div className="authors">
+				<div className="authors__list">
+					{authorList}
+				</div>
+				<div className={this.state.open? "authors__select open": "authors__select"} onClick={this.toggleOpen}>
+					Выбрать автора
+					<div className="authors__select__items">
+					{all}
+					</div>
+				</div>
 			</div>
 		);
 	}
+}
+class Author extends Component<{}, Props, State>{
+    render(){
+        return(
+			<div className="author">
+				{this.props.name}
+			</div>
+        );
+    }
 }

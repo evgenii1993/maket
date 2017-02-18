@@ -1,0 +1,1 @@
+.authors__select{position:relative}.authors__select__items{position:absolute;background:#FFF;cursor:pointer;top:100%;left:0;display:none}.authors__select__items .author{padding:5px 15px}.authors__select__items .author:hover{background-color:#ccc}.authors__select.open .authors__select__items{display:block}
