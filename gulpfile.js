@@ -18,7 +18,10 @@ gulp.task('build', function () {
 });
 
 gulp.task('watch', ['build'], function () {
-    gulp.watch('react/*/*.jsx', ['build']);
+    gulp.watch([
+        'react/*/*.jsx',
+        'react/*/*/*.jsx',
+    ], ['build']);
 });
 
 gulp.task('default', ['watch']);

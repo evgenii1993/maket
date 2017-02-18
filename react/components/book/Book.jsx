@@ -1,15 +1,15 @@
 'use strict';
 
 import React, {Component} from 'react';
+import Author from '../Author/Authors';
+
 
 export default class Book  extends Component<{}, Props, State>{
 	state = {
-		id_library: this.props.data.id,
-		id_book: this.props.data.id_book,
-		id_author: this.props.data.id_author,
-		name_b: this.props.data.name_b,
-		name_a: this.props.data.name_a
-	}
+		id_book: this.props.data.id,
+		authors: this.props.data.authors,
+		name_b: this.props.data.name
+	};
 	updateBooks = () =>{
 		let newData = this.state;
 			window.gl.ajax({
@@ -17,10 +17,10 @@ export default class Book  extends Component<{}, Props, State>{
 				sendData: newData
 			});
 		this.props.refrash();
-	}
+	};
 	deleteBooks = () =>{
 
-	}
+	};
 	editValue = (inputName) =>{
 		switch(inputName){
 			case "name": 
@@ -34,13 +34,14 @@ export default class Book  extends Component<{}, Props, State>{
 				});
 			break;
 		}
-	}
+	};
 	render(){
+		console.log(this.state, this.props);
 		return(
 			<div className="book">
 				<div className="book__row">
 					<input ref="name" value={this.state.name_b} onChange={()=>{this.editValue("name")}} />
-					<div ref="author" value={this.state.name_a} onChange={()=>{this.editValue("author")}} > <List> </div> 
+					<Authors/>
 					<button onClick={this.updateBooks} > П </button>
 					<button onClick={this.deleteBooks} > У </button>
 				</div>

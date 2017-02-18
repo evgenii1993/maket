@@ -27,12 +27,12 @@ export default class List  extends Component<{}, Props, State>{
 		}else{
 			loading = undefined;
 		}
-		books = this.state.data.map((item, index)=>{
-			
-			return (
-				<Book key={index} data={JSON.parse(item)} refrash={this.refrash}/> 
-			)		
-		});
+		if(this.state.data.result != undefined){
+            this.state.data.result.forEach((item, index)=>{
+                books.push(<Book key={index} data={item} refrash={this.refrash}/> );
+            });
+		}
+
 
 		return(
 			<div className="list">
