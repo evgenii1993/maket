@@ -15,6 +15,7 @@ window.gl = {
 			},
 			error:function(error){
 				alert("ERROR");
+				console.log(error);
 			}
 		});
 	},

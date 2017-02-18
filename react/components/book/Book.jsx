@@ -22,6 +22,31 @@ export default class Book  extends Component<{}, Props, State>{
 	deleteBooks = () =>{
 
 	};
+
+    addAuthor = (obj) => {
+        let newData = this.state.thisAuthors;
+        newData.push(obj);
+        this.setState({
+            thisAuthors: newData
+        });
+    };
+    deleteAuthor = (id) => {
+        let newData = this.state.thisAuthors;
+
+        newData.forEach((item, index)=>{
+            if(item != undefined){
+                if(id == item.id){
+                	console.log("Удалил: ",item);
+                    delete newData[index];
+                }
+            }
+        });
+
+        this.setState({
+            thisAuthors: newData
+        });
+    };
+
 	editValue = (inputName) =>{
 		switch(inputName){
 			case "name": 
@@ -37,12 +62,14 @@ export default class Book  extends Component<{}, Props, State>{
 		}
 	};
 	render(){
-		console.log('thisAuthors: ', this.state.thisAuthors);
 		return(
 			<div className="book">
 				<div className="book__row">
 					<input ref="name" value={this.state.name_b} onChange={()=>{this.editValue("name")}} />
-					<Authors data={this.state.thisAuthors} all={this.state.allAuthors}/>
+					<Authors data={this.state.thisAuthors}
+							 all={this.state.allAuthors}
+							 deleteAuthor={this.deleteAuthor}
+							 addAuthor={this.addAuthor}/>
 					<button onClick={this.updateBooks} > П </button>
 					<button onClick={this.deleteBooks} > У </button>
 				</div>

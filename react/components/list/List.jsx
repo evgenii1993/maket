@@ -11,7 +11,7 @@ export default class List  extends Component<{}, Props, State>{
 		loading: true
 	};
 	refrash = () =>{
-		this.setState({
+		this.state({
 			loading: true
 		});		
 	};
