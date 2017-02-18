@@ -14,8 +14,18 @@ window.gl = {
 				}
 			},
 			error:function(error){
-				alert(2);
+				alert("ERROR");
 			}
 		});
+	},
+	foundInArr: function(arr, val){
+		var result = false;
+		for(var i  = 0; i<arr.length; i++){
+			if(arr[i] == val){
+                result = true;
+                break;
+			}
+		}
+        return result;
 	}
 };

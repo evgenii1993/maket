@@ -5,11 +5,11 @@
 		    $dbName = "library";
 		    $dbLogin = "root";
 		    $dbPassword = "root";
-        $link = new mysqli(
-            $dbUrl.':3306/'.$dbName,
-            $dbLogin, $dbPassword,
-            $dbName
-        );
+            $link = new mysqli(
+                $dbUrl.':3306/'.$dbName,
+                $dbLogin, $dbPassword,
+                $dbName
+            );
 		    $res = $link->query($query) or die("\n > Invalid query: " . mysqli_error());
 			mysqli_close($link);
 		    return $res;
