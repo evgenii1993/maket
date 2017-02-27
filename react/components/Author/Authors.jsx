@@ -12,19 +12,28 @@ export default class Authors extends Component<{}, Props, State>{
 		this.setState({
 			open: !this.state.open
 		});
-	};
-
+	}
+	// ChangingCurrectAuthor = ( name, id) =>{
+	// 	console.log(' Изменение элемента ', id, ' __ ', name );
+	// 	// this.props.updateNameAuthor(id, name);
+	// 	// console.log(this.state.data);
+	// 	// let newListArrAuthor = [];
+	// 	// console.log(newListArrAuthor, 'Список измененных авторов');
+	// }
 
 
 	render(){
+		//console.log(this.props.data, ' итоговый массив');
+		//console.log(this.props.data); 
 		let authorList = [],
             idAuthor = [],
-			all = [];
+			all = [],
+			context = [];
 
         this.state.data.forEach((item, index)=>{
             idAuthor.push(item.id);
             authorList.push(
-            	<Author name={item.name} id={item.id} key={index} remove={()=>{this.props.deleteAuthor(item.id)}}/>
+            	<Author name={item.name} id={item.id} key={index} statActive ={this.props.stateA} updateNameAuthor = {this.props.updateNameAuthor} remove={()=>{this.props.deleteAuthor(item.id)}}/>
 			);
 		});
         this.props.all.forEach((item, index)=>{
@@ -37,26 +46,49 @@ export default class Authors extends Component<{}, Props, State>{
         if(all.length === 0){
             all.push(<div key={all.length+1} className="authors">Нет невписаных авторов</div>);
         }
+        if(this.props.stateA){
+        	context = (<div><div className={this.state.open ? "authors__select open": "authors__select"} onClick={this.toggleOpen}>
+								Добавить автора 
+								<div className="authors__select__items">
+									{all}
+								</div>
+							</div>
+						<button onClick={this.props.updateBook} > ПH </button> </div>);
+        }
         return(
 			<div className="authors">
 				<div className="authors__list">
 					{authorList}
 				</div>
-				<div className={this.state.open? "authors__select open": "authors__select"} onClick={this.toggleOpen}>
-					Выбрать автора
-					<div className="authors__select__items">
-					{all}
-					</div>
-				</div>
+				{context}
 			</div>
+
 		);
 	}
 }
+
 class Author extends Component<{}, Props, State>{
+	state = {
+		nameA: this.props.name	
+	}
+	editValue = () =>{
+		this.setState({
+			nameA: this.refs.nameA.value
+			
+		});
+		
+		this.props.updateNameAuthor(this.refs.nameA.value, this.props.id);
+	}
+
     render(){
-    	let Btn = undefined;
-    	if(this.props.remove != undefined){
-            Btn = <button onClick={this.props.remove}>Удалить автора</button>
+    
+    	let Btn = undefined,
+    		authorLine = undefined;
+    	if(this.props.remove != undefined && this.props.statActive){
+            Btn = <button onClick={this.props.remove}></button>
+            authorLine = <input ref="nameA" value={this.state.nameA} onChange= {()=>{this.editValue()}} />
+		}else{
+			authorLine = this.props.name 
 		}
         if(this.props.add != undefined){
             return(
@@ -66,8 +98,8 @@ class Author extends Component<{}, Props, State>{
 			)
         }else{
             return(
-				<div className="author">
-                    {this.props.name}
+				<div className="author">		
+                    {authorLine}
                     {Btn}
 				</div>
             );

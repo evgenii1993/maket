@@ -14,7 +14,7 @@
     display: none;
     width: 100%;
     border: 1px solid;
-
+    z-index: 2;
     .author{
       text-align: center;
 
@@ -29,4 +29,219 @@
       display: block;
     }
   }
+}
+.author button {
+    background: 0 0;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    background-image: url(/maket/less/images/cross.png);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.new-author__select{
+  position: relative;
+  display: inline-block;
+  border: 1px solid;
+  cursor: pointer;
+  padding: 3px;
+    &.open{
+      .new-author__item{
+        display: block;
+      }
+    }  
+  .new-author__item {
+    position: absolute;
+    background: #FFF;
+    cursor: pointer;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    border: 1px solid;
+    z-index: 2;
+    .author-del{
+      text-align: center;
+
+      &:hover{
+        background-color: #ccc;
+      }
+    }
+  }
+
+}
+
+
+.book__row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.authors__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.authors {
+    width: 200px;
+}
+
+
+
+.list__add-author {
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.new-author {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.form-add__list--open {
+    height: auto;
+    width: 100%;
+    display: block;
+    background: red;
+}
+
+.form-add__list {
+    display: none;
+}
+
+.form-add__author {
+    width: 170px;
+}
+.form-add__botton {
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-add {
+    display: flex;
+}
+
+.form-add__result-content {
+    display: flex;
+}
+
+.form-add__glob {
+    margin: 20px 20px;
+    width: auto;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.form-add__result {
+    width: 500px;
+}
+
+.form-add__con {
+    max-width: 200px;
+}
+
+.form-add__view-elem {
+    float: left;
+    margin: 0px 5px;
+}
+
+.form-add__view-elem span:last-child {
+    cursor: pointer;
+    color: red;
+}
+.form-add__edit {
+    display: flex;
+}
+
+.form-add {
+    flex-direction: column;
+}
+.form-add__icon--fatal {
+    background: url('/maket/less/images/close.png');
+}
+.form-add__icon--ready {
+    background: url('/maket/less/images/save.png');
+}
+
+.form-add__icon {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.loading__icon{
+  background: url('/maket/less/images/molchi.jpg');
+}
+
+div#content {
+    width: 500px;
+    border: 1px solid;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.list__content {
+    width: 450px;
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid;
+    min-height: 100px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.book:nth-child(even) {
+    background: rgba(0, 202, 255, 0.11);
+}
+
+.form-add__book {
+    margin: 0px 5px;
+}
+
+.form-add__edit {
+    justify-content: center;
+}
+
+.form-add__glob:nth-child(2) {
+    width: 215px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.author {
+    margin: 0px 5px;
+}
+
+
+.name-book {
+    width: 173px;
+}
+
+.book__row {
+    padding-bottom: 12px;
 }
