@@ -33,7 +33,7 @@ export default class NewAuthor  extends Component<{}, Props, State>{
 		},this.props.refrash("Удаление автора"));
 	}
 	addAuthor = (id) =>{
-		console.log(id);
+		//console.log(id);
 	}
 	render(){
 		let all = [];

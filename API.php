@@ -4,7 +4,7 @@
 			$dbUrl = "localhost";
 		    $dbName = "library";
 		    $dbLogin = "root";
-		    $dbPassword = "root";
+		    $dbPassword = "123456";
             $link = new mysqli(
                 $dbUrl.':3306/'.$dbName,
                 $dbLogin, $dbPassword,
@@ -160,12 +160,12 @@
             $nameBoob = $_POST['sendData']['name_b'];
             $res;
             for($i = 0; $i < count($authorsUp); $i++){
-                $res = DB::connect("SELECT * FROM `repositoryLib` WHERE `id_book` = '".$idBook."' AND `id_author` = '".$authorsUp[$i]['id']."'");
+                $res = DB::connect("SELECT * FROM `repositoryLib` WHERE `id_book` = '".$idBook."' AND `id_author` = '".$authorsUp[$i]["id"]."'");
                 if($res->num_rows == 0){
-                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."','".$authorsUp[$i]['id']."')");
+                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."','".$authorsUp[$i]["id"]."')");
                 }
                 // Проверка было ли это имя изменено 
-                $foundDifferentRow = DB::connect("SELECT `repositoryLib`.`id`, `authors`.`id_author` FROM `authors`, `repositoryLib` WHERE `repositoryLib`.`id_author` = '".$authorsUp[$i]['id']."' AND `repositoryLib`.`id_book` = '".$idBook."' AND `authors`.`name_a` <> '".$authorsUp[$i]["name"]."' AND  `authors`.`id_author` = '".$authorsUp[$i]["id"]."'");
+                $foundDifferentRow = DB::connect("SELECT `repositoryLib`.`id`, `authors`.`id_author` FROM `authors`, `repositoryLib` WHERE `repositoryLib`.`id_author` = '".$authorsUp[$i]["id"]."' AND `repositoryLib`.`id_book` = '".$idBook."' AND `authors`.`name_a` <> '".$authorsUp[$i]["name"]."' AND  `authors`.`id_author` = '".$authorsUp[$i]["id"]."'");
                 $elemRes = mysqli_fetch_array($foundDifferentRow, MYSQLI_ASSOC);
                 // Изменение найдено  
                  if($foundDifferentRow->num_rows > 0){
@@ -182,7 +182,7 @@
                         }else{
                             //ДА!
                             $idUsingNameChoise = mysqli_fetch_array($findOverlabInAuthors, MYSQLI_ASSOC);
-                            DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."', '".$idUsingNameChoise['id_author']."')");
+                            DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."', '".$idUsingNameChoise["id_author"]."')");
                         }
                  }
 
@@ -232,13 +232,13 @@
                 //echo  $resCheckName."  ";
                 if($resCheckName->num_rows > 0){
                     $elemRes = mysqli_fetch_array($resCheckName, MYSQLI_ASSOC);
-                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate['id_book']."','".$elemRes['id_author']."')");               
+                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate["id_book"]."','".$elemRes["id_author"]."')");               
                 }else{
                     DB::connect("INSERT INTO `authors` (`name_a`) VALUES('".$arrAuthors[$i]."')");
                     $idNewAuthor = DB::connect("SELECT `id_author` FROM `authors` WHERE `name_a`='".$arrAuthors[$i]."'");
                     $idNewAuthorChoise = mysqli_fetch_array($idNewAuthor, MYSQLI_ASSOC);
                     //echo $idNewAuthorChoise['id_author'].' Это номер айдишника если новый автор ';
-                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate['id_book']."','".$idNewAuthorChoise['id_author']."')"); 
+                    DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate["id_book"]."','".$idNewAuthorChoise["id_author"]."')"); 
                 }
             }
             getAll();

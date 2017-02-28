@@ -12,8 +12,9 @@ export default class List  extends Component<{}, Props, State>{
 		data: [],
 		loading: true
 
-	};
+	}
 	refrash = (name) =>{	
+		console.log(name, ' refrash ');
 		this.setState({
 			loading: true
 		});
@@ -23,9 +24,7 @@ export default class List  extends Component<{}, Props, State>{
 			books = [],
 			author,
 			$this = this;
-
-		console.log("LIstData: ",this.state.data);
-
+			//console.log(this.state.data.result, ' результат ');
 		if(this.state.loading){
 			window.gl.ajax(
 				{
@@ -42,7 +41,7 @@ export default class List  extends Component<{}, Props, State>{
 		}
 		if(this.state.data.result != undefined){
             this.state.data.result.forEach((item, index)=>{
-                books.push(<Book key={index} allAuthors={$this.state.data.authors} data={item} parent={$this} refrash={$this.refrash}/> );
+                books.push(<Book key={index} allAuthors={$this.state.data.authors} data={item} parent={$this} refrash={this.refrash}/> );
             });
             author = <NewAuthor allAuthors={this.state.data.authors} refrash={this.refrash} />;
 		}

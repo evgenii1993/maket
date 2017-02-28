@@ -32,7 +32,7 @@ updateName = (name) =>{
                 },
                 this.props.refrash("обновление книги"),
                 function(data){
-                    console.log("newData: ", data);
+                    // console.log("newData: ", data);
                     $this.props.parent.setState({data:data})
                 }
             );
@@ -57,13 +57,16 @@ updateName = (name) =>{
 	};
 	deleteBooks = () =>{
 	    let $this = this;
-
+	  //  console.log(' this id', this.state.id_book, ' name-book ', this.state.name_b, ' arr-author ', this.state.thisAuthors);
 		window.gl.ajax({
 					option: "deleteRepository",
-					delBook: ({"id_b":this.state.id_book})
-				}, this.props.refrash("удаление книги"), function(data){
-                $this.props.parent.setState({data:data})
+					delBook: ({"id_b":this.props.data.id})
+				}, 
+				this.props.refrash("удаление книги"),
+				 function(data){
+                    $this.props.parent.setState({data:data})
 				});
+		this.forceUpdate();
 	};
 
     addAuthor = (obj) => {
@@ -79,20 +82,24 @@ updateName = (name) =>{
         newData.forEach((item, index)=>{
             if(item != undefined){
                 if(id == item.id){
+
                 	delete newData[index];
+
                     window.gl.ajax({
 						option: "deleteAuthorInBook",
 						delEl: ({"id_a":item.id, "id_book": this.state.id_book})
-					}, this.props.refrash("удаление автора"), function(data){
+					}, 
+					this.props.refrash("удаление автора"), 
+					function(data){
                         $this.props.parent.setState({data:data})
-				});
+				    });
                 }
             }
         });
         this.setState({
             thisAuthors: newData
         });
-    };
+    }
     stateThisAuthors = (stat) => {
     	if(stat == 'open'){
 	    	this.setState({
@@ -103,7 +110,7 @@ updateName = (name) =>{
 	    		stateAuthor: false
 	    	});
     	}
-    };
+    }
 
 	editValue = (inputName) =>{
 		switch(inputName){
@@ -122,17 +129,20 @@ updateName = (name) =>{
 
 	render(){
 
+	//	console.log(' this.state BOOK ', this.state.allAuthors, ' this.props BOOK ', this.props.allAuthors);
 	    let nameBook = [];
 		if(this.state.stateAuthor){
 			nameBook = (<input ref="name" value={this.state.name_b} onChange={()=>{this.editValue("name")}} />);
 		}else{
 			nameBook = (<div className="name-book"> {this.state.name_b} </div>);
 		}
+		console.log(this.state.name_b, ' 1 ', this.props.data.name);
+		console.log(this.state.thisAuthors, ' 2 ', this.props.data.authors);
 		return(
 			<div className="book">
 				<div className="book__row">
 					{nameBook}
-					<Authors data={this.state.thisAuthors}
+					<Authors data={this.props.data.authors}
 							 all={this.props.allAuthors}
 							 deleteAuthor={this.deleteAuthor}
 							 addAuthor={this.addAuthor}

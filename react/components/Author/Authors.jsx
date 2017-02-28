@@ -23,7 +23,7 @@ export default class Authors extends Component<{}, Props, State>{
 
 
 	render(){
-		//console.log(this.props.data, ' итоговый массив');
+		//console.log(this.props.data, ' итоговый массив AUTHORS ');
 		//console.log(this.props.data); 
 		let authorList = [],
             idAuthor = [],
@@ -31,7 +31,7 @@ export default class Authors extends Component<{}, Props, State>{
 			context = [],
 			$this = this;
 
-        this.state.data.forEach((item, index)=>{
+        this.props.data.forEach((item, index)=>{
             idAuthor.push(item.id);
             authorList.push(
             	<Author name={item.name} id={item.id} key={index} statActive ={$this.props.stateA} updateNameAuthor = {$this.props.updateNameAuthor} remove={()=>{$this.props.deleteAuthor(item.id)}}/>
