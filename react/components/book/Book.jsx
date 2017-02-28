@@ -92,7 +92,7 @@ updateName = (name) =>{
         this.setState({
             thisAuthors: newData
         });
-    }
+    };
     stateThisAuthors = (stat) => {
     	if(stat == 'open'){
 	    	this.setState({
@@ -103,7 +103,7 @@ updateName = (name) =>{
 	    		stateAuthor: false
 	    	});
     	}
-    }
+    };
 
 	editValue = (inputName) =>{
 		switch(inputName){

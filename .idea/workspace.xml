@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233972e9-6a0a-470c-8bab-84e844ad25b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.php" afterPath="$PROJECT_DIR$/API.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/book/Book.jsx" afterPath="$PROJECT_DIR$/react/components/book/Book.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" afterPath="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" />
@@ -21,23 +20,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Book.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Book.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+            <state relative-caret-position="2011">
+              <caret line="125" column="33" lean-forward="false" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="33" />
               <folding>
-                <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
+                <marker date="1488289434068" expanded="true" signature="171:311" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormAdd.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormAdd.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            <state relative-caret-position="-797">
+              <caret line="88" column="29" lean-forward="false" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -85,8 +84,18 @@
       <file leaf-file-name="List.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="121">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generally.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generally.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -109,6 +118,8 @@
       <find>ДА ТУТ ЕСТЬ ЧТО ИЗМЕНТЬ</find>
       <find>echo</find>
       <find>deleteBooks</find>
+      <find>ref</find>
+      <find>stateAuthor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,10 +143,10 @@
         <option value="$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx" />
         <option value="$PROJECT_DIR$/generally.js" />
         <option value="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
-        <option value="$PROJECT_DIR$/react/components/list/List.jsx" />
         <option value="$PROJECT_DIR$/API.php" />
-        <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
+        <option value="$PROJECT_DIR$/react/components/list/List.jsx" />
         <option value="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" />
+        <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
       </list>
     </option>
   </component>
@@ -758,16 +769,16 @@
       <workItem from="1487443558067" duration="8771000" />
       <workItem from="1487452743318" duration="9021000" />
       <workItem from="1487513605922" duration="4000" />
-      <workItem from="1488283339660" duration="3978000" />
+      <workItem from="1488283339660" duration="5840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21774000" />
+    <option name="totallyTimeSpent" value="23636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,7 +791,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44676408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44676408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.262576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -836,7 +847,7 @@
         <state relative-caret-position="594">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488289434068" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -945,7 +956,7 @@
         <state relative-caret-position="594">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488289434068" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1054,7 +1065,7 @@
         <state relative-caret-position="54">
           <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding>
-            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488289434068" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1159,14 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generally.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/components/Author/Authors.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1212,29 +1215,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
+    <entry file="file://$PROJECT_DIR$/generally.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-          <folding>
-            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="121">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        <state relative-caret-position="-797">
+          <caret line="88" column="29" lean-forward="false" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2011">
+          <caret line="125" column="33" lean-forward="false" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="33" />
+          <folding>
+            <marker date="1488289434068" expanded="true" signature="171:311" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

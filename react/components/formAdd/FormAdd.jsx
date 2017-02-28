@@ -26,7 +26,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 				});
 			break;
 		}
-	}
+	};
 
 	toggleOpen = () => {
 		let arrNameAuthor = [];
@@ -82,9 +82,12 @@ export default class FormAdd  extends Component<{}, Props, State>{
 				option: "createB",
 				dataNewBook: ({"arrAuthor":this.state.choiceArrAuthor, "newNameBook": this.state.nameBook})
 			},
-			this.props.refrash(),
+			undefined,
 			function(data){
-                $this.props.parent.setState({data:data})
+	        	console.log($this.props.parent);
+                $this.props.parent.setState({
+                	data:data
+				})
 			});
 		}
 		this.setState({

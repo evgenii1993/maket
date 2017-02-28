@@ -12,7 +12,7 @@ export default class List  extends Component<{}, Props, State>{
 		data: [],
 		loading: true
 
-	}
+	};
 	refrash = (name) =>{	
 		this.setState({
 			loading: true
@@ -23,6 +23,8 @@ export default class List  extends Component<{}, Props, State>{
 			books = [],
 			author,
 			$this = this;
+
+		console.log("LIstData: ",this.state.data);
 
 		if(this.state.loading){
 			window.gl.ajax(
