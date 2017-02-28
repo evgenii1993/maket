@@ -17,25 +17,30 @@ export default class List  extends Component<{}, Props, State>{
 		this.setState({
 			loading: true
 		});
-	}
+	};
 	render(){
 		let loading = undefined,
 			books = [],
-			author;
+			author,
+			$this = this;
 
 		if(this.state.loading){
-			window.gl.ajax({
-				option: "all"
-			}, this,function(){
- 					this.setState({data:data})
-				});
+			window.gl.ajax(
+				{
+					option: "all"
+				},
+				this,
+				function(data){
+                	$this.setState({data:data})
+				}
+			);
 			loading = <Loading />
 		}else{
 			loading = undefined;
 		}
 		if(this.state.data.result != undefined){
             this.state.data.result.forEach((item, index)=>{
-                books.push(<Book key={index} allAuthors={this.state.data.authors} data={item} parent = {this} refrash={this.refrash}/> );
+                books.push(<Book key={index} allAuthors={$this.state.data.authors} data={item} parent={$this} refrash={$this.refrash}/> );
             });
             author = <NewAuthor allAuthors={this.state.data.authors} refrash={this.refrash} />;
 		}

@@ -12,10 +12,10 @@ window.gl = {
 						data: data
 					});
 				}
-                if(callBack != undefined)callBack();
+                if(callBack != undefined)callBack(data);
 			},
 			error:function(error){
-                if(callBack != undefined)callBack();
+                if(callBack != undefined)callBack(error);
 			}
 		});
 	},

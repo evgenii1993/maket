@@ -22,21 +22,26 @@ updateName = (name) =>{
 
 /********************************************/
 	updateBooks = () =>{
-		let newData = this.state;
-		console.log(this.state);
-		console.log(this.state.thisAuthors, ' НОВЫЕ ОБНОВЛЕННЫЕ АВТОРЫ ');
+		let newData = this.state,
+            $this = this;
 		this.stateThisAuthors("close");
-			window.gl.ajax({
-				option: "update",
-				sendData: newData
-			},this.props.refrash("обновление книги"),  function(){
- 							this.props.parent.setState({data:data})
-				});
+			window.gl.ajax(
+                {
+                    option: "update",
+                    sendData: newData
+                },
+                this.props.refrash("обновление книги"),
+                function(data){
+                    console.log("newData: ", data);
+                    $this.props.parent.setState({data:data})
+                }
+            );
 		
 		
-	}
+	};
+
 	updateNameAuthor = (name, id) =>{
-		console.log(name, id);
+
 		let newArrAuthor = [];
 		this.state.thisAuthors.forEach((item)=>{
 			if(item.id == id){
@@ -45,18 +50,16 @@ updateName = (name) =>{
 				newArrAuthor.push({'id':item.id, 'name':item.name});
 			}
 		});
-		console.log(newArrAuthor, 'new array');
+
 		this.setState({
 			thisAuthors: newArrAuthor
 		});
-		console.log(this.state.thisAuthors, ' ТЫТЫТЫТТЫТЫТЫТЫТЫТЫТТЫ ');
-
-	}
+	};
 	deleteBooks = () =>{
 		window.gl.ajax({
 					option: "deleteRepository",
 					delBook: ({"id_b":this.state.id_book})
-				}, this.props.refrash("удаление книги"), function(){
+				}, this.props.refrash("удаление книги"), function(data){
  							this.props.parent.setState({data:data})
 				});
 	}
@@ -67,19 +70,17 @@ updateName = (name) =>{
         this.setState({
             thisAuthors: this.state.thisAuthors
         });
-    }
+    };
     deleteAuthor = (id) => {
-    	console.log(id);
         let newData = this.state.thisAuthors;
         newData.forEach((item, index)=>{
             if(item != undefined){
                 if(id == item.id){
-                	console.log("Удалил: ",item,this.state.id_book);
-                    delete newData[index];
+                	delete newData[index];
                     window.gl.ajax({
 						option: "deleteAuthorInBook",
 						delEl: ({"id_a":item.id, "id_book": this.state.id_book})
-					}, this.props.refrash("удаление автора"), function(){
+					}, this.props.refrash("удаление автора"), function(data){
  							this.props.parent.setState({data:data})
 				});
                 }
@@ -118,9 +119,7 @@ updateName = (name) =>{
 
 	render(){
 
-		console.log(this.props.allData,'Все данные');
-		console.log(this.props.data, ' hhhbhbhhhhhhhh ');
-		let nameBook = [];
+	    let nameBook = [];
 		if(this.state.stateAuthor){
 			nameBook = (<input ref="name" value={this.state.name_b} onChange={()=>{this.editValue("name")}} />);
 		}else{

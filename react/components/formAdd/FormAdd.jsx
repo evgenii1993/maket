@@ -80,7 +80,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 	        window.gl.ajax({
 				option: "createB",
 				dataNewBook: ({"arrAuthor":this.state.choiceArrAuthor, "newNameBook": this.state.nameBook})
-			}, this.props.refrash(), function(){
+			}, this.props.refrash(), function(data){
  							this.props.parent.setState({data:data})
 				});
 		}
@@ -88,12 +88,8 @@ export default class FormAdd  extends Component<{}, Props, State>{
 			choiceArrAuthor: [],
 			nameBook: ''
 		});
-	}
+	};
 	render(){
-	//	console.log(this.props.allData.result, "ваваы");
-	//	console.log(this.state.nameBook);
-	// console.log(this.state.nameAuthor);
-	// console.log(this.state.choiceArrAuthor);
 		let arrFind = [],
 			arrElemView = [],
 			boolEnter = false;

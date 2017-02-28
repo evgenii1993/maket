@@ -28,18 +28,19 @@ export default class Authors extends Component<{}, Props, State>{
 		let authorList = [],
             idAuthor = [],
 			all = [],
-			context = [];
+			context = [],
+			$this = this;
 
         this.state.data.forEach((item, index)=>{
             idAuthor.push(item.id);
             authorList.push(
-            	<Author name={item.name} id={item.id} key={index} statActive ={this.props.stateA} updateNameAuthor = {this.props.updateNameAuthor} remove={()=>{this.props.deleteAuthor(item.id)}}/>
+            	<Author name={item.name} id={item.id} key={index} statActive ={$this.props.stateA} updateNameAuthor = {$this.props.updateNameAuthor} remove={()=>{$this.props.deleteAuthor(item.id)}}/>
 			);
 		});
         this.props.all.forEach((item, index)=>{
             if(!window.gl.foundInArr(idAuthor, item.id)){
                 all.push(
-                    <Author name={item.name} id={item.id} key={index} add={()=>{this.props.addAuthor(item)}}/>
+                    <Author name={item.name} id={item.id} key={index} add={()=>{$this.props.addAuthor(item)}}/>
                 );
             }
         });
@@ -70,7 +71,7 @@ export default class Authors extends Component<{}, Props, State>{
 class Author extends Component<{}, Props, State>{
 	state = {
 		nameA: this.props.name	
-	}
+	};
 	editValue = () =>{
 		this.setState({
 			nameA: this.refs.nameA.value
@@ -78,7 +79,7 @@ class Author extends Component<{}, Props, State>{
 		});
 		
 		this.props.updateNameAuthor(this.refs.nameA.value, this.props.id);
-	}
+	};
 
     render(){
     

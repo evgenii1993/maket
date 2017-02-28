@@ -4,7 +4,7 @@
 			$dbUrl = "localhost";
 		    $dbName = "library";
 		    $dbLogin = "root";
-		    $dbPassword = "123456";
+		    $dbPassword = "root";
             $link = new mysqli(
                 $dbUrl.':3306/'.$dbName,
                 $dbLogin, $dbPassword,
