@@ -24,11 +24,14 @@ updateName = (name) =>{
 	updateBooks = () =>{
 		let newData = this.state;
 		console.log(this.state);
+		console.log(this.state.thisAuthors, ' НОВЫЕ ОБНОВЛЕННЫЕ АВТОРЫ ');
 		this.stateThisAuthors("close");
 			window.gl.ajax({
 				option: "update",
 				sendData: newData
-			},this.props.refrash("обновление книги"));
+			},this.props.refrash("обновление книги"),  function(){
+ 							this.props.parent.setState({data:data})
+				});
 		
 		
 	}
@@ -46,17 +49,19 @@ updateName = (name) =>{
 		this.setState({
 			thisAuthors: newArrAuthor
 		});
+		console.log(this.state.thisAuthors, ' ТЫТЫТЫТТЫТЫТЫТЫТЫТЫТТЫ ');
 
 	}
 	deleteBooks = () =>{
 		window.gl.ajax({
 					option: "deleteRepository",
 					delBook: ({"id_b":this.state.id_book})
-				}, this.props.refrash("удаление книги"));
+				}, this.props.refrash("удаление книги"), function(){
+ 							this.props.parent.setState({data:data})
+				});
 	}
 
     addAuthor = (obj) => {
-
         let newData = this.state.thisAuthors;
         newData.push(obj);
         this.setState({
@@ -74,7 +79,9 @@ updateName = (name) =>{
                     window.gl.ajax({
 						option: "deleteAuthorInBook",
 						delEl: ({"id_a":item.id, "id_book": this.state.id_book})
-					}, this.props.refrash("удаление автора"));
+					}, this.props.refrash("удаление автора"), function(){
+ 							this.props.parent.setState({data:data})
+				});
                 }
             }
         });
@@ -110,6 +117,8 @@ updateName = (name) =>{
 	}; 
 
 	render(){
+
+		console.log(this.props.allData,'Все данные');
 		console.log(this.props.data, ' hhhbhbhhhhhhhh ');
 		let nameBook = [];
 		if(this.state.stateAuthor){

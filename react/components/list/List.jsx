@@ -13,17 +13,10 @@ export default class List  extends Component<{}, Props, State>{
 		loading: true
 
 	}
-	refrash = (name) =>{
-		console.log("Изменение удаления ", name);	
-		window.gl.ajax({
-				option: "all"
-			}, this);	
+	refrash = (name) =>{	
 		this.setState({
 			loading: true
 		});
-		window.gl.ajax({
-				option: "all"
-			}, this);
 	}
 	render(){
 		let loading = undefined,
@@ -33,14 +26,16 @@ export default class List  extends Component<{}, Props, State>{
 		if(this.state.loading){
 			window.gl.ajax({
 				option: "all"
-			}, this);
+			}, this,function(){
+ 					this.setState({data:data})
+				});
 			loading = <Loading />
 		}else{
 			loading = undefined;
 		}
 		if(this.state.data.result != undefined){
             this.state.data.result.forEach((item, index)=>{
-                books.push(<Book key={index} allAuthors={this.state.data.authors} data={item} refrash={this.refrash}/> );
+                books.push(<Book key={index} allAuthors={this.state.data.authors} data={item} parent = {this} refrash={this.refrash}/> );
             });
             author = <NewAuthor allAuthors={this.state.data.authors} refrash={this.refrash} />;
 		}

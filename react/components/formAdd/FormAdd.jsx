@@ -80,7 +80,9 @@ export default class FormAdd  extends Component<{}, Props, State>{
 	        window.gl.ajax({
 				option: "createB",
 				dataNewBook: ({"arrAuthor":this.state.choiceArrAuthor, "newNameBook": this.state.nameBook})
-			}, this.props.refrash());
+			}, this.props.refrash(), function(){
+ 							this.props.parent.setState({data:data})
+				});
 		}
 		this.setState({
 			choiceArrAuthor: [],
