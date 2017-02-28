@@ -9,7 +9,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 		openAuthor: false,
 		choiceArrAuthor: [],
 		defNameBook: []
-	}
+	};
 
 	editValue = (name) =>{
 		switch(name){
@@ -36,7 +36,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 			});
 		
 		}
-	}
+	};
 
 	choiceAuthor = (name) =>{
 		this.setState({
@@ -44,7 +44,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 			openAuthor: false
 		});
 
-	}
+	};
 
 	addListAuthor = () =>{
 		let count = 0;
@@ -61,7 +61,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 				});
 			}
 		}
-	}
+	};
 	delElemInArray = (name) =>{
 		let oldArr = this.state.choiceArrAuthor,
 			newArr = [];
@@ -73,16 +73,19 @@ export default class FormAdd  extends Component<{}, Props, State>{
 		this.setState({
 			choiceArrAuthor: newArr
 		});
-	}
+	};
 
 	createBook = (bool) => {
+		let $this = this;
 		if(bool){
 	        window.gl.ajax({
 				option: "createB",
 				dataNewBook: ({"arrAuthor":this.state.choiceArrAuthor, "newNameBook": this.state.nameBook})
-			}, this.props.refrash(), function(data){
- 							this.props.parent.setState({data:data})
-				});
+			},
+			this.props.refrash(),
+			function(data){
+                $this.props.parent.setState({data:data})
+			});
 		}
 		this.setState({
 			choiceArrAuthor: [],

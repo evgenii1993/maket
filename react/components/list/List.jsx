@@ -56,7 +56,7 @@ export default class List  extends Component<{}, Props, State>{
 					{author}
 				</div>
 				<div>
-					<FormAdd refrash={this.refrash} allData = {this.state.data} />
+					<FormAdd parent={this} refrash={this.refrash} allData = {this.state.data} />
 				</div>
 			</div>
 		);

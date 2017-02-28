@@ -56,13 +56,15 @@ updateName = (name) =>{
 		});
 	};
 	deleteBooks = () =>{
+	    let $this = this;
+
 		window.gl.ajax({
 					option: "deleteRepository",
 					delBook: ({"id_b":this.state.id_book})
 				}, this.props.refrash("удаление книги"), function(data){
- 							this.props.parent.setState({data:data})
+                $this.props.parent.setState({data:data})
 				});
-	}
+	};
 
     addAuthor = (obj) => {
         let newData = this.state.thisAuthors;
@@ -72,7 +74,8 @@ updateName = (name) =>{
         });
     };
     deleteAuthor = (id) => {
-        let newData = this.state.thisAuthors;
+        let newData = this.state.thisAuthors,
+            $this = this;
         newData.forEach((item, index)=>{
             if(item != undefined){
                 if(id == item.id){
@@ -81,7 +84,7 @@ updateName = (name) =>{
 						option: "deleteAuthorInBook",
 						delEl: ({"id_a":item.id, "id_book": this.state.id_book})
 					}, this.props.refrash("удаление автора"), function(data){
- 							this.props.parent.setState({data:data})
+                        $this.props.parent.setState({data:data})
 				});
                 }
             }

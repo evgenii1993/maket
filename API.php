@@ -119,37 +119,42 @@
         }
     }
 
+
+    function getAll(){
+        $arrRes = [];
+        $result = DB::connect("SELECT `repositoryLib`.`id_book`, `repositoryLib`.`id_author`, `book`.`name_b`, `authors`.`name_a`  FROM `book` INNER JOIN `repositoryLib` ON `book`.id_book = `repositoryLib`.id_book  INNER JOIN `authors` ON `authors`.id_author = `repositoryLib`.id_author");
+
+        $books = [];
+
+        while ($row = mysqli_fetch_array($result)) {
+            $fount = Instrument::search($books, "id", $row["id_book"]);
+
+            if($fount !== false){
+                $fount -> authors[] = (new Author($row["id_author"],$row["name_a"]));
+            }else{
+                $books[] = new Book($row["name_b"],$row["id_book"], [new Author($row["id_author"],$row["name_a"])]);
+            }
+        }
+
+        $authors = [];
+
+        $result_onlyAuthors = DB::connect("SELECT * FROM `authors`");
+        while ($row = mysqli_fetch_array($result_onlyAuthors)) {
+            $authors[] = new Author($row["id_author"],$row["name_a"]);
+        }
+
+        echo json_encode([
+            "result" => $books,
+            "authors" => $authors
+        ]);
+    }
+
+
     switch ($_POST['option']) {
         case 'all':
-            $arrRes = [];
-            $result = DB::connect("SELECT `repositoryLib`.`id_book`, `repositoryLib`.`id_author`, `book`.`name_b`, `authors`.`name_a`  FROM `book` INNER JOIN `repositoryLib` ON `book`.id_book = `repositoryLib`.id_book  INNER JOIN `authors` ON `authors`.id_author = `repositoryLib`.id_author");
-
-            $books = [];
-
-            while ($row = mysqli_fetch_array($result)) {
-                $fount = Instrument::search($books, "id", $row["id_book"]);
-
-                if($fount !== false){
-                    $fount -> authors[] = (new Author($row["id_author"],$row["name_a"]));
-                }else{
-                    $books[] = new Book($row["name_b"],$row["id_book"], [new Author($row["id_author"],$row["name_a"])]);
-                }
-            }
-
-            $authors = [];
-
-            $result_onlyAuthors = DB::connect("SELECT * FROM `authors`");
-            while ($row = mysqli_fetch_array($result_onlyAuthors)) {
-                $authors[] = new Author($row["id_author"],$row["name_a"]);
-            }
-
-            echo json_encode([
-                "result" => $books,
-                "authors" => $authors
-            ]);
+            getAll();
             break;
         case 'update':
-        echo 'ИЗМЕНЯЕТ СОСТОЯНИЕ КНИГИ';
             $authorsUp =  $_POST['sendData']['thisAuthors'];
             $idBook = $_POST['sendData']['id_book'];
             $nameBoob = $_POST['sendData']['name_b'];
@@ -163,8 +168,7 @@
                 $foundDifferentRow = DB::connect("SELECT `repositoryLib`.`id`, `authors`.`id_author` FROM `authors`, `repositoryLib` WHERE `repositoryLib`.`id_author` = '".$authorsUp[$i]['id']."' AND `repositoryLib`.`id_book` = '".$idBook."' AND `authors`.`name_a` <> '".$authorsUp[$i]["name"]."' AND  `authors`.`id_author` = '".$authorsUp[$i]["id"]."'");
                 $elemRes = mysqli_fetch_array($foundDifferentRow, MYSQLI_ASSOC);
                 // Изменение найдено  
-                 if($foundDifferentRow->num_rows > 0){   
-                 echo " ДА ТУТ ЕСТЬ ЧТО ИЗМЕНТЬ! "; 
+                 if($foundDifferentRow->num_rows > 0){
                     DB::connect("DELETE FROM `repositoryLib` WHERE `id` = '".$elemRes["id"]."'");
                         // удаляю запись
                         $findOverlabInAuthors = DB::connect("SELECT `id_author` FROM `authors` WHERE `name_a`='".$authorsUp[$i]["name"]."' ");
@@ -177,35 +181,41 @@
                             DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."', '".$idUsingNameChoise["id_author"]."')");
                         }else{
                             //ДА!
-                            echo 'Если совпадение обнаружено';
                             $idUsingNameChoise = mysqli_fetch_array($findOverlabInAuthors, MYSQLI_ASSOC);
                             DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES ('".$idBook."', '".$idUsingNameChoise['id_author']."')");
                         }
                  }
+
             }
 
             DB::connect("UPDATE `book` SET `name_b`='".$nameBoob."' WHERE id_book = '".$idBook."'");
+            getAll();
         break;
         case 'deleteRepository':
             DB::connect("DELETE FROM `repositoryLib` WHERE `id_book` = '".$_POST['delBook']['id_b']."'");
             DB::connect("DELETE FROM `book` WHERE `id_book` = '".$_POST['delBook']['id_b']."'");
-        break;
+            getAll();
+            break;
         case 'deleteAuthorInBook':
             DB::connect("DELETE FROM `repositoryLib` WHERE `id_book` = '".$_POST['delEl']['id_book']."' AND `id_author` = '".$_POST['delEl']['id_a']."'");
-        break;
+            getAll();
+            break;
         case 'createAuthor':
             $res = DB::connect("SELECT * FROM `authors` WHERE `name_a` = '".$_POST['nameA']."'");
             if($res->num_rows == 0){
                 DB::connect("INSERT INTO `authors`(`name_a`) VALUES ('".$_POST['nameA']."')");
             }
-        break;
+            getAll();
+            break;
         case 'deleteAuthor':
             DB::connect("DELETE FROM `authors` WHERE `id_author` = '".$_POST['idDeleteAuthor']."'");
             DB::connect("DELETE FROM `repositoryLib` WHERE `id_author` = '".$_POST['idDeleteAuthor']."'");
-        break;
+            getAll();
+            break;
         case 'removeLib':
             $res = DB::connect("DELETE FROM `repositoryLib` WHERE `id_author` = '".$_POST['id_author']."' AND `id_book` = '".$_POST['id_book']."'");
-        break;
+            getAll();
+            break;
         case 'createB':
             $checkBook = DB::connect("SELECT * FROM `book` WHERE `name_b` = '".$_POST['dataNewBook']['newNameBook']."'");
             if($checkBook->num_rows > 0){
@@ -221,8 +231,7 @@
                // echo $arrAuthors[$i].' Название автора из начального массива ';
                 //echo  $resCheckName."  ";
                 if($resCheckName->num_rows > 0){
-                    $elemRes = mysqli_fetch_array($resCheckName, MYSQLI_ASSOC);  
-                    echo $elemRes['id_author']." существующий айдишник автора в БД ";
+                    $elemRes = mysqli_fetch_array($resCheckName, MYSQLI_ASSOC);
                     DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate['id_book']."','".$elemRes['id_author']."')");               
                 }else{
                     DB::connect("INSERT INTO `authors` (`name_a`) VALUES('".$arrAuthors[$i]."')");
@@ -232,9 +241,10 @@
                     DB::connect("INSERT INTO `repositoryLib` (`id_book`, `id_author`) VALUES('".$idBookCreate['id_book']."','".$idNewAuthorChoise['id_author']."')"); 
                 }
             }
-        break;
+            getAll();
+            break;
         default:
-
+            getAll();
             break;
     }
 

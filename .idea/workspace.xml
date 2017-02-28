@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233972e9-6a0a-470c-8bab-84e844ad25b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.php" afterPath="$PROJECT_DIR$/API.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generally.js" afterPath="$PROJECT_DIR$/generally.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/Author/Authors.jsx" afterPath="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/book/Book.jsx" afterPath="$PROJECT_DIR$/react/components/book/Book.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" afterPath="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/components/list/List.jsx" afterPath="$PROJECT_DIR$/react/components/list/List.jsx" />
@@ -27,49 +24,59 @@
       <file leaf-file-name="Book.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="196">
+              <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
               <folding>
-                <marker date="1488285254877" expanded="true" signature="171:311" ph="{...}" />
+                <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="API.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormAdd.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="183" selection-end-column="18" />
+            <state relative-caret-position="147">
+              <caret line="183" column="43" lean-forward="false" selection-start-line="183" selection-start-column="39" selection-end-line="183" selection-end-column="43" />
               <folding>
-                <marker date="1488284040470" expanded="true" signature="2796:3051" ph="SELECT `repo... book" />
-                <marker date="1488284040470" expanded="true" signature="3596:3619" ph="SELECT * FRO... authors" />
-                <marker date="1488284040470" expanded="true" signature="4263:4369" ph="SELECT * FRO... repositoryLib" />
-                <marker date="1488284040470" expanded="true" signature="4447:4549" ph="INSERT INTO `repositoryLib`... " />
-                <marker date="1488284040470" expanded="true" signature="4675:4977" ph="SELECT `repo... authors" />
-                <marker date="1488284040470" expanded="true" signature="5245:5306" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="5412:5489" ph="SELECT `id_a... authors" />
-                <marker date="1488284040470" expanded="true" signature="5686:5756" ph="INSERT INTO `authors`... " />
-                <marker date="1488284040470" expanded="true" signature="5816:5895" ph="SELECT `id_a... authors" />
-                <marker date="1488284040470" expanded="true" signature="6037:6151" ph="INSERT INTO `repositoryLib`... " />
-                <marker date="1488284040470" expanded="true" signature="6430:6544" ph="INSERT INTO `repositoryLib`... " />
-                <marker date="1488284040470" expanded="true" signature="6633:6705" ph="UPDATE `book... " />
-                <marker date="1488284040470" expanded="true" signature="6782:6859" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="6888:6956" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="7035:7161" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="7241:7303" ph="SELECT * FRO... authors" />
-                <marker date="1488284040470" expanded="true" signature="7373:7435" ph="INSERT INTO `authors`... " />
-                <marker date="1488284040470" expanded="true" signature="7522:7594" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="7623:7701" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="7778:7891" ph="DELETE FROM " />
-                <marker date="1488284040470" expanded="true" signature="7972:8052" ph="SELECT * FRO... book" />
-                <marker date="1488284040470" expanded="true" signature="8175:8256" ph="INSERT INTO `book`... " />
-                <marker date="1488284040470" expanded="true" signature="8291:8379" ph="SELECT `id_b... book" />
-                <marker date="1488284040470" expanded="true" signature="8676:8748" ph="SELECT `id_a... authors" />
-                <marker date="1488284040470" expanded="true" signature="9128:9247" ph="INSERT INTO `repositoryLib`... " />
-                <marker date="1488284040470" expanded="true" signature="9322:9384" ph="INSERT INTO `authors`... " />
-                <marker date="1488284040470" expanded="true" signature="9436:9506" ph="SELECT `id_a... authors" />
-                <marker date="1488284040470" expanded="true" signature="9733:9862" ph="INSERT INTO `repositoryLib`... " />
+                <marker date="1488286693371" expanded="true" signature="2760:3015" ph="SELECT `repo... book" />
+                <marker date="1488286693371" expanded="true" signature="3516:3539" ph="SELECT * FRO... authors" />
+                <marker date="1488286693371" expanded="true" signature="4196:4302" ph="SELECT * FRO... repositoryLib" />
+                <marker date="1488286693371" expanded="true" signature="4380:4482" ph="INSERT INTO `repositoryLib`... " />
+                <marker date="1488286693371" expanded="true" signature="4608:4910" ph="SELECT `repo... authors" />
+                <marker date="1488286693371" expanded="true" signature="5122:5183" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="5289:5366" ph="SELECT `id_a... authors" />
+                <marker date="1488286693371" expanded="true" signature="5563:5633" ph="INSERT INTO `authors`... " />
+                <marker date="1488286693371" expanded="true" signature="5693:5772" ph="SELECT `id_a... authors" />
+                <marker date="1488286693371" expanded="true" signature="5914:6028" ph="INSERT INTO `repositoryLib`... " />
+                <marker date="1488286693371" expanded="true" signature="6244:6358" ph="INSERT INTO `repositoryLib`... " />
+                <marker date="1488286693371" expanded="true" signature="6448:6520" ph="UPDATE `book... " />
+                <marker date="1488286693371" expanded="true" signature="6619:6696" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="6725:6793" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="6898:7024" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="7130:7192" ph="SELECT * FRO... authors" />
+                <marker date="1488286693371" expanded="true" signature="7262:7324" ph="INSERT INTO `authors`... " />
+                <marker date="1488286693371" expanded="true" signature="7437:7509" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="7538:7616" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="7719:7832" ph="DELETE FROM " />
+                <marker date="1488286693371" expanded="true" signature="7939:8019" ph="SELECT * FRO... book" />
+                <marker date="1488286693371" expanded="true" signature="8142:8223" ph="INSERT INTO `book`... " />
+                <marker date="1488286693371" expanded="true" signature="8258:8346" ph="SELECT `id_b... book" />
+                <marker date="1488286693371" expanded="true" signature="8643:8715" ph="SELECT `id_a... authors" />
+                <marker date="1488286693371" expanded="true" signature="9007:9126" ph="INSERT INTO `repositoryLib`... " />
+                <marker date="1488286693371" expanded="true" signature="9201:9263" ph="INSERT INTO `authors`... " />
+                <marker date="1488286693371" expanded="true" signature="9315:9385" ph="SELECT `id_a... authors" />
+                <marker date="1488286693371" expanded="true" signature="9612:9741" ph="INSERT INTO `repositoryLib`... " />
               </folding>
             </state>
           </provider>
@@ -78,8 +85,8 @@
       <file leaf-file-name="List.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="212">
+              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -96,6 +103,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ДА ТУТ ЕСТЬ ЧТО ИЗМЕНТЬ</find>
+      <find>echo</find>
+      <find>deleteBooks</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,11 +130,12 @@
         <option value="$PROJECT_DIR$/less/Authors/Authors.less" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/react/components/Author/newAuthor/NewAuthor.jsx" />
-        <option value="$PROJECT_DIR$/API.php" />
         <option value="$PROJECT_DIR$/generally.js" />
-        <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
-        <option value="$PROJECT_DIR$/react/components/list/List.jsx" />
         <option value="$PROJECT_DIR$/react/components/Author/Authors.jsx" />
+        <option value="$PROJECT_DIR$/react/components/list/List.jsx" />
+        <option value="$PROJECT_DIR$/API.php" />
+        <option value="$PROJECT_DIR$/react/components/book/Book.jsx" />
+        <option value="$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx" />
       </list>
     </option>
   </component>
@@ -743,12 +758,12 @@
       <workItem from="1487443558067" duration="8771000" />
       <workItem from="1487452743318" duration="9021000" />
       <workItem from="1487513605922" duration="4000" />
-      <workItem from="1488283339660" duration="2484000" />
+      <workItem from="1488283339660" duration="3978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20280000" />
+    <option name="totallyTimeSpent" value="21774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -808,6 +823,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -818,7 +836,7 @@
         <state relative-caret-position="594">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1488285254877" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -860,34 +878,34 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488284040470" expanded="true" signature="2796:3051" ph="SELECT `repo... book" />
-            <marker date="1488284040470" expanded="true" signature="3596:3619" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="4263:4369" ph="SELECT * FRO... repositoryLib" />
-            <marker date="1488284040470" expanded="true" signature="4447:4549" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="4675:4977" ph="SELECT `repo... authors" />
-            <marker date="1488284040470" expanded="true" signature="5245:5306" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="5412:5489" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="5686:5756" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="5816:5895" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="6037:6151" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6430:6544" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6633:6705" ph="UPDATE `book... " />
-            <marker date="1488284040470" expanded="true" signature="6782:6859" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="6888:6956" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7035:7161" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7241:7303" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="7373:7435" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="7522:7594" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7623:7701" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7778:7891" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7972:8052" ph="SELECT * FRO... book" />
-            <marker date="1488284040470" expanded="true" signature="8175:8256" ph="INSERT INTO `book`... " />
-            <marker date="1488284040470" expanded="true" signature="8291:8379" ph="SELECT `id_b... book" />
-            <marker date="1488284040470" expanded="true" signature="8676:8748" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9128:9247" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="9322:9384" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="9436:9506" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9733:9862" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="2760:3015" ph="SELECT `repo... book" />
+            <marker date="1488286693371" expanded="true" signature="3516:3539" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="4196:4302" ph="SELECT * FRO... repositoryLib" />
+            <marker date="1488286693371" expanded="true" signature="4380:4482" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="4608:4910" ph="SELECT `repo... authors" />
+            <marker date="1488286693371" expanded="true" signature="5122:5183" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="5289:5366" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5563:5633" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="5693:5772" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5914:6028" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6244:6358" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6448:6520" ph="UPDATE `book... " />
+            <marker date="1488286693371" expanded="true" signature="6619:6696" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6725:6793" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6898:7024" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7130:7192" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="7262:7324" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="7437:7509" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7538:7616" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7719:7832" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7939:8019" ph="SELECT * FRO... book" />
+            <marker date="1488286693371" expanded="true" signature="8142:8223" ph="INSERT INTO `book`... " />
+            <marker date="1488286693371" expanded="true" signature="8258:8346" ph="SELECT `id_b... book" />
+            <marker date="1488286693371" expanded="true" signature="8643:8715" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9007:9126" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="9201:9263" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="9315:9385" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9612:9741" ph="INSERT INTO `repositoryLib`... " />
           </folding>
         </state>
       </provider>
@@ -927,7 +945,7 @@
         <state relative-caret-position="594">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1488285254877" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -969,34 +987,34 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488284040470" expanded="true" signature="2796:3051" ph="SELECT `repo... book" />
-            <marker date="1488284040470" expanded="true" signature="3596:3619" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="4263:4369" ph="SELECT * FRO... repositoryLib" />
-            <marker date="1488284040470" expanded="true" signature="4447:4549" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="4675:4977" ph="SELECT `repo... authors" />
-            <marker date="1488284040470" expanded="true" signature="5245:5306" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="5412:5489" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="5686:5756" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="5816:5895" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="6037:6151" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6430:6544" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6633:6705" ph="UPDATE `book... " />
-            <marker date="1488284040470" expanded="true" signature="6782:6859" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="6888:6956" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7035:7161" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7241:7303" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="7373:7435" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="7522:7594" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7623:7701" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7778:7891" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7972:8052" ph="SELECT * FRO... book" />
-            <marker date="1488284040470" expanded="true" signature="8175:8256" ph="INSERT INTO `book`... " />
-            <marker date="1488284040470" expanded="true" signature="8291:8379" ph="SELECT `id_b... book" />
-            <marker date="1488284040470" expanded="true" signature="8676:8748" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9128:9247" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="9322:9384" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="9436:9506" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9733:9862" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="2760:3015" ph="SELECT `repo... book" />
+            <marker date="1488286693371" expanded="true" signature="3516:3539" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="4196:4302" ph="SELECT * FRO... repositoryLib" />
+            <marker date="1488286693371" expanded="true" signature="4380:4482" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="4608:4910" ph="SELECT `repo... authors" />
+            <marker date="1488286693371" expanded="true" signature="5122:5183" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="5289:5366" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5563:5633" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="5693:5772" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5914:6028" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6244:6358" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6448:6520" ph="UPDATE `book... " />
+            <marker date="1488286693371" expanded="true" signature="6619:6696" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6725:6793" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6898:7024" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7130:7192" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="7262:7324" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="7437:7509" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7538:7616" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7719:7832" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7939:8019" ph="SELECT * FRO... book" />
+            <marker date="1488286693371" expanded="true" signature="8142:8223" ph="INSERT INTO `book`... " />
+            <marker date="1488286693371" expanded="true" signature="8258:8346" ph="SELECT `id_b... book" />
+            <marker date="1488286693371" expanded="true" signature="8643:8715" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9007:9126" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="9201:9263" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="9315:9385" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9612:9741" ph="INSERT INTO `repositoryLib`... " />
           </folding>
         </state>
       </provider>
@@ -1036,7 +1054,7 @@
         <state relative-caret-position="54">
           <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding>
-            <marker date="1488285254877" expanded="true" signature="171:311" ph="{...}" />
+            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1149,24 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <marker date="1488285254877" expanded="true" signature="171:311" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/components/Author/Authors.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1177,38 +1177,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="183" selection-end-column="18" />
+        <state relative-caret-position="147">
+          <caret line="183" column="43" lean-forward="false" selection-start-line="183" selection-start-column="39" selection-end-line="183" selection-end-column="43" />
           <folding>
-            <marker date="1488284040470" expanded="true" signature="2796:3051" ph="SELECT `repo... book" />
-            <marker date="1488284040470" expanded="true" signature="3596:3619" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="4263:4369" ph="SELECT * FRO... repositoryLib" />
-            <marker date="1488284040470" expanded="true" signature="4447:4549" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="4675:4977" ph="SELECT `repo... authors" />
-            <marker date="1488284040470" expanded="true" signature="5245:5306" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="5412:5489" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="5686:5756" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="5816:5895" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="6037:6151" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6430:6544" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="6633:6705" ph="UPDATE `book... " />
-            <marker date="1488284040470" expanded="true" signature="6782:6859" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="6888:6956" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7035:7161" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7241:7303" ph="SELECT * FRO... authors" />
-            <marker date="1488284040470" expanded="true" signature="7373:7435" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="7522:7594" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7623:7701" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7778:7891" ph="DELETE FROM " />
-            <marker date="1488284040470" expanded="true" signature="7972:8052" ph="SELECT * FRO... book" />
-            <marker date="1488284040470" expanded="true" signature="8175:8256" ph="INSERT INTO `book`... " />
-            <marker date="1488284040470" expanded="true" signature="8291:8379" ph="SELECT `id_b... book" />
-            <marker date="1488284040470" expanded="true" signature="8676:8748" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9128:9247" ph="INSERT INTO `repositoryLib`... " />
-            <marker date="1488284040470" expanded="true" signature="9322:9384" ph="INSERT INTO `authors`... " />
-            <marker date="1488284040470" expanded="true" signature="9436:9506" ph="SELECT `id_a... authors" />
-            <marker date="1488284040470" expanded="true" signature="9733:9862" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="2760:3015" ph="SELECT `repo... book" />
+            <marker date="1488286693371" expanded="true" signature="3516:3539" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="4196:4302" ph="SELECT * FRO... repositoryLib" />
+            <marker date="1488286693371" expanded="true" signature="4380:4482" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="4608:4910" ph="SELECT `repo... authors" />
+            <marker date="1488286693371" expanded="true" signature="5122:5183" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="5289:5366" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5563:5633" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="5693:5772" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="5914:6028" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6244:6358" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="6448:6520" ph="UPDATE `book... " />
+            <marker date="1488286693371" expanded="true" signature="6619:6696" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6725:6793" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="6898:7024" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7130:7192" ph="SELECT * FRO... authors" />
+            <marker date="1488286693371" expanded="true" signature="7262:7324" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="7437:7509" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7538:7616" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7719:7832" ph="DELETE FROM " />
+            <marker date="1488286693371" expanded="true" signature="7939:8019" ph="SELECT * FRO... book" />
+            <marker date="1488286693371" expanded="true" signature="8142:8223" ph="INSERT INTO `book`... " />
+            <marker date="1488286693371" expanded="true" signature="8258:8346" ph="SELECT `id_b... book" />
+            <marker date="1488286693371" expanded="true" signature="8643:8715" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9007:9126" ph="INSERT INTO `repositoryLib`... " />
+            <marker date="1488286693371" expanded="true" signature="9201:9263" ph="INSERT INTO `authors`... " />
+            <marker date="1488286693371" expanded="true" signature="9315:9385" ph="SELECT `id_a... authors" />
+            <marker date="1488286693371" expanded="true" signature="9612:9741" ph="INSERT INTO `repositoryLib`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/book/Book.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding>
+            <marker date="1488286921268" expanded="true" signature="171:311" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/list/List.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/components/formAdd/FormAdd.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
