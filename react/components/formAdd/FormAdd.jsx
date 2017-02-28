@@ -48,7 +48,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 
 	addListAuthor = () =>{
 		let count = 0;
-		if(this.state.nameAuthor != ''){
+		if(this.state.nameAuthor != '' ){
 			this.state.choiceArrAuthor.forEach((item, index) =>{
 				if(item == this.state.nameAuthor){
 					count ++;
@@ -113,7 +113,7 @@ export default class FormAdd  extends Component<{}, Props, State>{
 			}else{
 				arrElemView = <div className="form-add__error-null"> Нету выбранных авторов </div>;
 			}
-			if(this.state.choiceArrAuthor.length > 0 && this.state.nameBook != undefined){
+			if(this.state.choiceArrAuthor.length > 0 && this.state.nameBook != undefined && this.state.nameBook != ''){
 				boolEnter = true;
 			}
 			

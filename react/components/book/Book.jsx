@@ -136,8 +136,8 @@ updateName = (name) =>{
 		}else{
 			nameBook = (<div className="name-book"> {this.state.name_b} </div>);
 		}
-		console.log(this.state.name_b, ' 1 ', this.props.data.name);
-		console.log(this.state.thisAuthors, ' 2 ', this.props.data.authors);
+		// console.log(this.state.name_b, ' 1 ', this.props.data.name);
+		// console.log(this.state.thisAuthors, ' 2 ', this.props.data.authors);
 		return(
 			<div className="book">
 				<div className="book__row">
@@ -150,8 +150,8 @@ updateName = (name) =>{
 							 updateBook = {this.updateBooks} 
 							 editValue = {this.editValue}
 							 updateNameAuthor = {this.updateNameAuthor}/>
-					<button onClick={()=>{this.stateThisAuthors('open')}}> Р </button>
-					<button onClick={this.deleteBooks} > У </button>
+					<button onClick={()=>{this.stateThisAuthors('open')}} className="book-edit less-icon">  </button>
+					<button onClick={this.deleteBooks} className="book-clear less-icon">  </button>
 				</div>
 			</div>
 		);

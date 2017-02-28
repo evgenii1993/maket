@@ -54,7 +54,7 @@ export default class Authors extends Component<{}, Props, State>{
 									{all}
 								</div>
 							</div>
-						<button onClick={this.props.updateBook} > ПH </button> </div>);
+						<button onClick={this.props.updateBook} className="authors-edit less-icon">  </button> </div>);
         }
         return(
 			<div className="authors">

@@ -55,7 +55,7 @@ export default class NewAuthor  extends Component<{}, Props, State>{
 				<button onClick={this.createAuthor} >  Запись </button>
 				<div className="new-author__list-author">
 					<div className={this.state.open ? "new-author__select open" : "new-author__select"}>
-						<span className='new-author__name'>Нажми и уничтожь</span><button className="new-author-button" onClick={this.toggleOpen}> \/ </button>
+						<span className='new-author__name'>Нажать и уничтожить</span><button className="new-author-button" onClick={this.toggleOpen}> \/ </button>
 						<div className="new-author__item">
 							{all}
 						</div>
